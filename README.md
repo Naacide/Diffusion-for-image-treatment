@@ -12,12 +12,6 @@ It was developed as part of MA322 course by Nathan AZEDO, David BURGUN, and Laur
 - Random pattern generation ("Prince de Galles")
 - Anisotropic diffusion
 
-## Requirements
-
-- Python 3.7+
-- numpy
-- opencv-python
-
 ## Usage
 
 ```python
