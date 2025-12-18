@@ -1,7 +1,7 @@
 # Image Diffusion Filters
 
 This repository contains a Python library for image processing using diffusion equations.
-It was developed as part of the MA322 course by Nathan AZEDO, David BURGUN, and Laurène REINHART.
+
 
 The project demonstrates various image filtering techniques based on partial differential equations (PDEs) and numerical integration.
 
