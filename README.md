@@ -1,30 +1,29 @@
-# MA322_BE Image Processing Library
+# Image Diffusion Filters
 
-This repository contains a Python library for image processing using diffusion equations. 
-It was developed as part of MA322 course by Nathan AZEDO, David BURGUN, and Laurène REINHART.
+This repository contains a Python library for image processing using diffusion equations.
+It was developed as part of the MA322 course by Nathan AZEDO, David BURGUN, and Laurène REINHART.
+
+The project demonstrates various image filtering techniques based on partial differential equations (PDEs) and numerical integration.
 
 ## Features
 
-- Diffusion filtering on color images (RK4 integration)
-- Gradient-based filtering
-- Laplacian-based filtering
-- Brightness modification
-- Random pattern generation ("Prince de Galles")
-- Anisotropic diffusion
+The library provides several filters for color images:
 
-## Usage
+- **Diffusion filter (`RKimage`)**: Standard diffusion-based smoothing.
+- **Gradient-based diffusion (`RKimage_normgrad`)**: Filter using the gradient norm.
+- **Laplacian-based diffusion (`RKimage_normlaplace`)**: Filter using the Laplacian norm.
+- **Brightness modification (`RKimage_luminosité`)**: Custom brightness adjustment.
+- **Random pattern / "Prince de Galles" (`RKimage(fPdeGalles)`)**: Generates a random pattern for artistic effect.
+- **Anisotropic diffusion (`fani`)**: Optional function for advanced diffusion (available in the library).
 
-```python
-import cv2
-from MA322_BE_lib import RKimage, f
+## Requirements
 
-# Load an image
-U0 = cv2.imread('image1.jpg')
+- Python 3.7+
+- numpy
+- opencv-python
+- tqdm (for progress bars)
 
-# Apply RK4 diffusion filter
-output = cv2.convertScaleAbs(RKimage(f, U0, t0=0, h=0.01, nbiter=100))
+Install dependencies with:
 
-cv2.imshow("Before filter", U0)
-cv2.imshow("After filter", output)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+```bash
+pip install numpy opencv-python tqdm
