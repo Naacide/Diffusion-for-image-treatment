@@ -2,8 +2,9 @@
 
 This repository contains a Python library for image processing using diffusion equations.
 
-
 The project demonstrates various image filtering techniques based on partial differential equations (PDEs) and numerical integration.
+
+Read the file "Ma322_BE_2023.pdf" if you want to see the subject given to us, student, bringing us to the realisation of these codes (its in French sry)
 
 ## Features
 
